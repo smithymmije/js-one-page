@@ -31,13 +31,13 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
   
       /* Ajusta a cor do ícone no menu inferior */
       if (link.closest('.bottom-nav')) {
-        link.style.color = isActive ? '#00c6ff' : '#fff';
+        link.style.color = isActive ? '#f9b351' : '#fff';
       }
     });
   });
   
   /* Typewriter */
-  const words = ["Designer", "Photographer", "Freelancer"];
+  const words = ["uma pessoa curiosa", "alguém que aprende sempre", "apaixonado por tecnologia", "um criador de projetos"];
   const el = document.getElementById('typewriter');
   
   let wordIndex = 0;
