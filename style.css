@@ -24,11 +24,11 @@ body {
 .side-nav {
     position: fixed;
     top: 50%;
-    left: 25px;
+    left: 1.5rem;
     transform: translateY(-50%);
     display: flex;
     flex-direction: column;
-    gap: 24px;
+    gap: 1.5rem;
     z-index: 1000;
 }
 
@@ -36,12 +36,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 56px;
-    height: 56px;
+    width: 3.5rem;
+    height: 3.5rem;
     border-radius: 50%;
     background: #e9e9e9;
     color: #666768;
-    font-size: 22px;
+    font-size: 1.375rem;
     transition: background 0.3s, color 0.3s;
 }
 
@@ -117,12 +117,12 @@ body {
 
 .social-icons {
     display: flex;
-    gap: 25px;
+    gap: 1.5rem;
 }
 
 .social-icons a {
     color: #666768;
-    font-size: 24px;
+    font-size: 1.5rem;
     transition: color 0.3s, transform 0.3s;
 }
 
@@ -186,7 +186,7 @@ section h2 {
     left: 0;
     right: 0;
     background: #111;
-    padding: 10px 0;
+    padding: 0.625rem 0;
     z-index: 1001;
     justify-content: space-around;
     align-items: center;
@@ -194,7 +194,7 @@ section h2 {
 
 .bottom-nav a {
     color: #fff;            /* cor padrão dos ícones */
-    font-size: 22px;
+    font-size: 1.375rem;
     transition: color 0.3s;
 }
 
@@ -755,3 +755,250 @@ section h2 {
     }
   }
   
+  @media (min-width: 1920px) {
+    /* Base Font Size */
+    body {
+        font-size: 1.9rem; /* A bit larger for better readability */
+    }
+
+    /* Side Nav */
+    .side-nav {
+        left: 2rem;
+        gap: 1.8rem;
+    }
+    
+    .side-nav a {
+        width: 7rem;
+        height: 7rem;
+        font-size: 3rem;
+    }
+
+    /* Hero Section */
+    #hero {
+        padding-left: 18vw;
+    }
+
+    .hero-title {
+        font-size: 5.5rem;
+    }
+
+    .hero-subtitle {
+        font-size: 2.2rem;
+    }
+
+    .social-icons {
+        gap: 1.8rem;
+    }
+    
+    .social-icons a {
+        font-size: 2.2rem;
+    }
+
+    /* Auxiliary Sections */
+    #about,
+    #skills,
+    #resume,
+    #portfolio,
+    #contact {
+        padding: 3.75rem;
+    }
+
+    .about-container {
+        max-width: 65vw;
+    }
+
+    .skills-grid {
+        grid-template-columns: repeat(auto-fit, minmax(21.8rem, 1fr));
+        gap: 2.5rem;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(auto-fit, minmax(23.7rem, 1fr));
+        gap: 1.8rem;
+    }
+}
+
+@media (min-width: 2560px) {
+  /* Base Font Size */
+  body {
+      font-size: 2.4rem;
+  }
+
+  /* Side Nav */
+  .side-nav {
+      left: 2.8rem;
+      gap: 2.2rem;
+  }
+  
+  .side-nav a {
+      width: 9rem;
+      height: 9rem;
+      font-size: 4rem;
+  }
+
+  /* Hero Section */
+  #hero {
+      padding-left: 18vw;
+  }
+
+  .hero-title {
+      font-size: 6.5rem;
+  }
+
+  .hero-subtitle {
+      font-size: 3rem;
+  }
+
+  .social-icons {
+      gap: 1.8rem;
+  }
+  
+  .social-icons a {
+      font-size: 3rem;
+  }
+
+  /* Auxiliary Sections */
+  #about,
+  #skills,
+  #resume,
+  #portfolio,
+  #contact {
+      padding: 3.75rem;
+  }
+
+  .about-container {
+      max-width: 65vw;
+      gap: 3.75rem;
+  }
+  
+  .about-photo {
+      flex: 0 0 350px;
+  }
+  
+  .skills-grid {
+      grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+      gap: 2rem;
+  }
+
+  .portfolio-grid {
+      grid-template-columns: repeat(auto-fit, minmax(28.2rem, 1fr));
+      gap: 2.5rem;
+  }
+
+  .project-card img {
+      height: 13.7rem ;
+  }
+  #contact {
+    display: flex;
+    justify-content: center; /* alinha horizontalmente */
+    align-items: center;     /* alinha verticalmente */
+    padding: 4rem 2rem;
+    min-height: 100vh;       /* ocupa a altura total da tela */
+    text-align: center;      /* alinha o texto dentro da div */
+  }
+  .contact-container {
+    max-width: 65vw;
+    width: 100%;
+    gap: 2rem;
+  }
+}
+
+@media (min-width: 3840px) {
+  /* Base Font Size */
+  body {
+      font-size: 3.5rem;
+  }
+  
+  /* Side Nav */
+  .side-nav {
+      left: 3.8rem;
+      gap: 2.7rem;
+  }
+  
+  .side-nav a {
+      width: 12rem;
+      height: 12rem;
+      font-size: 5.5rem;
+  }
+
+  /* Hero Section */
+  #hero {
+      padding-left: 18vw;
+  }
+
+  .hero-title {
+      font-size: 9rem;
+  }
+
+  .hero-subtitle {
+      font-size: 5rem;
+  }
+
+  .social-icons {
+      gap: 2.5rem;
+  }
+
+  .social-icons a {
+      font-size: 5rem;
+  }
+
+  /* Auxiliary Sections */
+  #about,
+  #skills,
+  #resume,
+  #portfolio,
+  #contact {
+      padding: 5rem;
+  }
+
+  .about-container {
+      max-width: 65vw;
+      gap: 4rem;
+  }
+
+  .about-photo {
+      flex: 0 0 450px;
+  }
+  
+  .about-text h2,
+  .skills-container h2,
+  .resume-container h2,
+  .portfolio-container h2,
+  .contact-container h2 {
+      font-size: 4rem;
+  }
+
+  .skills-grid {
+      grid-template-columns: repeat(auto-fit, minmax(30vw, 1fr));
+      gap: 2rem;
+  }
+
+  .portfolio-grid {
+      grid-template-columns: repeat(auto-fit, minmax(20vw, 1fr));
+      gap: 2rem;
+  }
+
+  .project-card img {
+      height: 10vh;
+  }
+
+  .timeline-dot {
+      width: 20px;
+      height: 20px;
+  }
+  #contact {
+    display: flex;
+    justify-content: center; /* alinha horizontalmente */
+    align-items: center;     /* alinha verticalmente */
+    padding: 4rem 2rem;
+    min-height: 100vh;       /* ocupa a altura total da tela */
+    text-align: center;      /* alinha o texto dentro da div */
+  }
+  .contact-container {
+    max-width: 65vw;
+    width: 100%;
+    gap: 2rem;
+  }
+  
+}
+
