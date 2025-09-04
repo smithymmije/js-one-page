@@ -695,11 +695,11 @@ section h2 {
     .about-container {
       flex-direction: column;
       text-align: center;
-      gap: 40px;
+      gap: 30px;
     }
   
     .about-photo {
-      margin-top: 30px;
+      margin-top: 20px;
     }
   
     .skills-grid {
@@ -711,7 +711,7 @@ section h2 {
     }
   
     .project-card img {
-      height: 190px;
+      height: 150px;
     }
   }
   
