@@ -696,8 +696,8 @@ section h2 {
       flex-direction: column;
       text-align: center;
       gap: 30px;
+      padding-top:5px;
     }
-   #skills { width: 60vw; }
   
     .about-photo {
       margin-top: 20px;
