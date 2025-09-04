@@ -668,7 +668,7 @@ section h2 {
     .resume-container h2,
     .portfolio-container h2,
     .contact-container h2 {
-      font-size: 1rem;
+      font-size: 2em;
     }
   
     .skills-grid {
@@ -711,7 +711,7 @@ section h2 {
     }
   
     .project-card img {
-      height: 150px;
+      height: 180px;
     }
   }
   
