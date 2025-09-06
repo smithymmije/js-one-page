@@ -234,6 +234,8 @@ section h2 {
       line-height: 1.4;
       margin-bottom: 20px;
     }
+
+    .about-photo {display: none;}
   
     .social-icons {
       display: flex;
@@ -281,6 +283,8 @@ section h2 {
       line-height: 1.5;
       margin-bottom: 20px;
     }
+
+    .about-photo {display: none;}
   
     .social-icons {
       display: flex;
@@ -329,6 +333,8 @@ section h2 {
       line-height: 1.5;
       margin-bottom: 20px;
     }
+
+    .about-photo {display: none;}
   
     .social-icons {
       display: flex;
