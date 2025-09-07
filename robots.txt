@@ -1,0 +1,48 @@
+# =====================================
+# Robots.txt para Jimmy Smith Portfolio
+# =====================================
+
+# Permite todos os bots principais
+User-agent: *
+# Bloqueia pastas que não precisam ser indexadas
+Disallow: /admin/
+Disallow: /private/
+Disallow: /backup/
+Disallow: /temp/
+
+# Permite rastrear tudo o que é público
+Allow: / 
+Allow: /#hero
+Allow: /#about
+Allow: /#skills
+Allow: /#resume
+Allow: /#portfolio
+Allow: /#contact
+
+# Sitemap
+Sitemap: https://jimmysmith.com.br/sitemap.xml
+
+# =====================================
+# Googlebot específico (pode customizar se quiser)
+# =====================================
+User-agent: Googlebot
+Allow: /
+
+# =====================================
+# Bloqueios extras para bots indesejados
+# =====================================
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /
+
+User-agent: *
+Crawl-delay: 2
+
+# =====================================
+# Fim do arquivo
+# =====================================
