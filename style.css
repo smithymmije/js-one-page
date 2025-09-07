@@ -1115,6 +1115,115 @@ section h2 {
 }
 
 
+/* Footer geral */
+#footer {
+  background-color: #e9e9e9; 
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555; /* Cinza médio para boa leitura */
+  margin-top: 3rem;
+  min-height: 5vh;
+}
+
+/* Texto e elemento interativo do footer */
+#footer p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+#footer a {
+  color: #007acc; /* Azul suave para links */
+  text-decoration: none;
+}
+
+#footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade em dispositivos pequenos */
+@media (max-width: 575px) {
+  #footer {
+    padding: 1.5rem 0.5rem;
+    font-size: 0.85rem;
+    min-height: 20vh;
+  }
+}
+
+@media (min-width: 576px) and (max-width: 767px) {
+  #footer {
+    padding: 1.5rem 0.5rem;
+    font-size: 0.85rem;
+    min-height: 20vh;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  #footer {
+    padding: 1.5rem 0.5rem;
+    font-size: 0.85rem;
+    min-height: 5vh;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  #footer {
+    padding: 1.5rem 0.5rem;
+    font-size: 1rem;
+    min-height: 5vh;
+  }
+}
+
+@media (min-width: 1920px) {
+  #footer {
+    padding: 1.5rem 0.5rem;
+    font-size: 1.2rem;
+    min-height: 5vh;
+  }
+}
+
+@media (min-width: 2560px) {
+  #footer {
+    padding: 1.5rem 0.5rem;
+    font-size: 1.7rem;
+    min-height: 5vh;
+  }
+}
+
+@media (min-width: 3840px) {
+  #footer {
+    padding: 1.5rem 0.5rem;
+    font-size: 1.7rem;
+    min-height: 5vh;
+  }
+}
+
+/*Redes sociais dos contatos*/
+.social-links {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-links a {
+  color: #666768; 
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #0b0a12; 
+}
+
+.social-links a:hover {
+  transform: translateY(-3px) scale(1.1);
+  transition: transform 0.3s, color 0.3s;
+}
+
+
+
+
 
 /* Aviso de Cookies */
 #cookieBanner {
