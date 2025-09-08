@@ -142,7 +142,6 @@ body {
     text-decoration-thickness: 2px;
 }
 
-
 .cursor {
     display: inline-block;
     animation: blink 0.7s steps(1) infinite;
@@ -209,7 +208,6 @@ section h2 {
   color: #333;
 }
 
-
 .quote {
   font-style: italic;
   color: #555;
@@ -238,8 +236,6 @@ section h2 {
   height: auto;
   display: block;
 }
-
-
 
 .skills-container {
   max-width: 1000px;
@@ -439,8 +435,57 @@ section h2 {
     margin-bottom: 50px;
     line-height: 1.8;
   }
-  
 
+  /* Footer geral */
+#footer {
+  background-color: #e9e9e9; 
+  padding: 2rem 1rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #555; /* Cinza médio para boa leitura */
+  margin-top: 3rem;
+  min-height: 5vh;
+}
+
+/* Texto e elemento interativo do footer */
+#footer p {
+  margin: 0;
+  line-height: 1.6;
+}
+
+#footer a {
+  color: #007acc; /* Azul suave para links */
+  text-decoration: none;
+}
+
+#footer a:hover {
+  text-decoration: underline;
+}
+
+/*Redes sociais dos contatos*/
+.social-links {
+  margin-top: 1.5rem;
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+}
+
+.social-links a {
+  color: #666768; 
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.social-links a:hover {
+  color: #0b0a12; 
+}
+
+.social-links a:hover {
+  transform: translateY(-3px) scale(1.1);
+  transition: transform 0.3s, color 0.3s;
+}
+
+  
 /* ==============================
    6. MENU INFERIOR (MOBILE)
    ============================== */
@@ -468,13 +513,11 @@ section h2 {
     color: #fafafa;         /* ícone ativo ou em hover fica claro */
 }
 
-
 /* Mostra menu inferior em telas pequenas */
 @media (max-width: 767px) {
   .bottom-nav { display: flex; }
   body { padding-bottom: 70px; } /* evita corte de conteúdo */
 }
-
 
 /* ==============================
    7. MEDIA QUERIES
@@ -493,8 +536,7 @@ section h2 {
       justify-content: center;
       align-items: center;
       text-align: center;
-      height: auto;
-      
+      height: auto;   
     }
   
     .hero-title {
@@ -503,7 +545,6 @@ section h2 {
       margin-bottom: 10px;
     }
 
-      
     .hero-subtitle {
       font-size: 1.2rem;
       line-height: 1.4;
@@ -547,8 +588,7 @@ section h2 {
       }
   
       #about {align-items: flex-start; min-height: auto;}
-      
-    
+       
       .blob-mask {
         display: none;
       }
@@ -596,8 +636,7 @@ section h2 {
       } 
     }
   
-
-/* Pequeno 11111111111*/
+/* Pequeno*/
 @media (min-width: 576px) and (max-width: 767px) {
   .side-nav {
     display: none;
@@ -620,8 +659,7 @@ section h2 {
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: auto;
-    
+    height: auto;  
   }
 
   .hero-title {
@@ -630,7 +668,6 @@ section h2 {
     margin-bottom: 10px;
   }
 
-    
   .hero-subtitle {
     font-size: 1.2rem;
     line-height: 1.4;
@@ -650,14 +687,12 @@ section h2 {
 
   #about {align-items: flex-start; min-height: auto;}
 
-
   .blob-mask {
     display: none;
   }
 
   .about-text h2 {margin-top: 0; margin-bottom: 0; font-size: 2.1rem; text-align: center;}
   .about-text {font-size: 1rem; padding-left: 2rem; padding-right: 2rem; text-align: justify;}
-
 
   .social-icons {
     display: flex;
@@ -682,25 +717,12 @@ section h2 {
     }
   }
   
-
 /* Médio */
 @media (min-width: 768px) and (max-width: 991px) {
     .side-nav {
       left: 15px;
     }
   
-   /* #hero {
-      padding: 80px 100px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: flex-start;
-      text-align: left;
-      height: auto;
-      padding-left: 20vw;
-      height: 100vh;
-    }*/
-
     #hero {
       display: flex;
       flex-direction: column;
@@ -748,11 +770,10 @@ section h2 {
       min-height: 100vh;
     }
   
-
     .about-container {
       min-height: 100vh;
       gap: 1rem;
-      padding-left: 20vw;
+      /*padding-left: 20vw;*/
       
     }
     .about-photo {display: none;}
@@ -766,7 +787,6 @@ section h2 {
       width: 65vw;
     }
     
-  
     .project-card img {
       height: 20vh;
     }
@@ -777,7 +797,6 @@ section h2 {
     }
   }
   
-
 /* Grande */
 @media (min-width: 992px) and (max-width: 1199px) {
     #hero {
@@ -833,12 +852,10 @@ section h2 {
 
      .blob-mask { display: none;}
     
-
     .side-nav {
       left: 30px;
     }
    
-
     .skills-container {min-height: 100vh; min-width: 65vw; padding-top: 2rem;}
   
     .skills-grid {
@@ -860,7 +877,6 @@ section h2 {
     }
   }
  
-
   @media (min-width: 1920px) {
     /* Base Font Size */
     body {
@@ -908,9 +924,12 @@ section h2 {
     #contact {
         padding: 3.75rem;
     }
+    .contact-container {min-width: 65vw;}
+    .social-links i {font-size: 3rem;}
+    .about-text {font-size: 2rem;}
 
-    .about-container {
-        max-width: 65vw;
+    .blob-mask {
+      display: none;
     }
 
     .skills-grid {
@@ -923,9 +942,9 @@ section h2 {
         gap: 1.8rem;
     }
 
-    #footer {
+    #footer p {
       padding: 1.5rem 0.5rem;
-      font-size: 1.2rem;
+      font-size: 1.5rem;
       min-height: 5vh;
     }
     #cookieBanner {
@@ -977,19 +996,24 @@ section h2 {
       font-size: 3rem;
   }
 
+  .blob-mask {
+    display: none;
+  }
+
   /* Auxiliary Sections */
   #about,
   #skills,
   #resume,
   #portfolio,
   #contact {
-      padding: 3.75rem;
+      padding: 8rem;
   }
 
   .about-container {
-      max-width: 65vw;
+      min-width: 65vw;
       gap: 3.75rem;
   }
+  .about-text {font-size: 2.5rem;}
   
   .about-photo {
       flex: 0 0 350px;
@@ -1020,6 +1044,11 @@ section h2 {
     max-width: 65vw;
     width: 100%;
     gap: 2rem;
+  }
+  #footer {
+    padding: 1.5rem 0.5rem;
+    font-size: 1.7rem;
+    min-height: 5vh;
   }
 }
 
@@ -1068,24 +1097,29 @@ section h2 {
   #resume,
   #portfolio,
   #contact {
-      padding: 5rem;
+      padding: 30rem;
   }
 
   .about-container {
-      max-width: 65vw;
+      min-width: 75vw;
       gap: 4rem;
   }
+  .about-text {font-size: 4rem;}
 
   .about-photo {
       flex: 0 0 450px;
   }
-  
+
+  .blob-mask {
+    display: none;
+  }
+
   .about-text h2,
   .skills-container h2,
   .resume-container h2,
   .portfolio-container h2,
   .contact-container h2 {
-      font-size: 4rem;
+      font-size: 8rem;
   }
 
   .skills-grid {
@@ -1119,77 +1153,13 @@ section h2 {
     width: 100%;
     gap: 2rem;
   }
+  #footer p{
+    padding: 1.5rem 0.5rem;
+    font-size: 3rem;
+    min-height: 5vh;
+  }
   
 }
-
-
-/* Footer geral */
-#footer {
-  background-color: #e9e9e9; 
-  padding: 2rem 1rem;
-  text-align: center;
-  font-size: 0.9rem;
-  color: #555; /* Cinza médio para boa leitura */
-  margin-top: 3rem;
-  min-height: 5vh;
-}
-
-/* Texto e elemento interativo do footer */
-#footer p {
-  margin: 0;
-  line-height: 1.6;
-}
-
-#footer a {
-  color: #007acc; /* Azul suave para links */
-  text-decoration: none;
-}
-
-#footer a:hover {
-  text-decoration: underline;
-}
-
-
-@media (min-width: 2560px) {
-  #footer {
-    padding: 1.5rem 0.5rem;
-    font-size: 1.7rem;
-    min-height: 5vh;
-  }
-}
-
-@media (min-width: 3840px) {
-  #footer {
-    padding: 1.5rem 0.5rem;
-    font-size: 1.7rem;
-    min-height: 5vh;
-  }
-}
-
-/*Redes sociais dos contatos*/
-.social-links {
-  margin-top: 1.5rem;
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-}
-
-.social-links a {
-  color: #666768; 
-  font-size: 1.5rem;
-  transition: color 0.3s;
-}
-
-.social-links a:hover {
-  color: #0b0a12; 
-}
-
-.social-links a:hover {
-  transform: translateY(-3px) scale(1.1);
-  transition: transform 0.3s, color 0.3s;
-}
-
-
 
 /* Aviso de Cookies */
 #cookieBanner {
@@ -1327,7 +1297,6 @@ section h2 {
   transition: opacity 0.3s ease;
   pointer-events: auto;
 }
-
 
 /*PRECISA CONSERTAR*/
 /* Google Analytics - estilos para modal de cookies */
