@@ -82,12 +82,12 @@ body {
     width: 100%;
     height: 100%;
     /* Adiciona a imagem de fundo aqui */
-    background-image: url('images/jimmy2.jpeg');
+    background-image: url('images/background-g.jpeg');
     background-repeat: no-repeat;
     background-position: 50% 5%;
     background-size: cover;
     /* Esmaece a imagem com opacidade. Ajuste o valor para sua preferência. */
-    opacity: 0.07; /* Valor entre 0 (totalmente invisível) e 1 (totalmente visível) */
+    opacity: 0.2; /* Valor entre 0 (totalmente invisível) e 1 (totalmente visível) */
     z-index: 0; /* Coloca a imagem no fundo */
   }
   
@@ -216,30 +216,34 @@ section h2 {
   padding-left: 1rem;
 }
 
-.blob-mask {
+
+
+/*.blob-mask {
   width: 100%;
   max-width: 30vw;
   margin: 0 auto;
   clip-path: url(#blobClip); /* recorte do blob */
-  overflow: hidden; /* garante que nada ultrapasse o blob */
-}
+  /*overflow: hidden; /* garante que nada ultrapasse o blob */
+/*}*/
 
-.foto-blob-mask {
+/*.foto-blob-mask {
   transform: scale(1) translateY(-10px) translateX(-10px); 
   /* scale < 1 diminui a foto, > 1 aumenta */
   /* translateY move para cima/baixo, translateX move para os lados */
-  transform-origin: center;
-}
+ /* transform-origin: center;
+}*/
 
-.blob-mask img {
+/*.blob-mask img {
   width: 100%;
   height: auto;
   display: block;
-}
+}*/
 
 .skills-container {
-  max-width: 1000px;
+  min-width: 65vw;
+  height: auto;
   margin: 0 auto;
+ 
 }
 
 .skills-container h2 {
@@ -248,6 +252,7 @@ section h2 {
   margin-bottom: 50px;
   color: #333;
 }
+
 
 .skills-grid {
   display: grid;
@@ -263,9 +268,11 @@ section h2 {
 }
 
 .skill-card h3 {
-  color: #0066cc;
+  color: #0b0a12;
   margin-bottom: 20px;
 }
+
+
 
 .skill-card ul {
   list-style: none;
@@ -275,6 +282,13 @@ section h2 {
 .skill-card li {
   margin: 10px 0;
 }
+
+.skill-card li i {
+  font-weight: bold;
+  margin-right: .5rem;
+ 
+}
+
 
 .resume-container {
   max-width: 800px;
@@ -300,7 +314,7 @@ section h2 {
   top: 0;
   bottom: 0;
   width: 2px;
-  background: #0066cc;
+  background: #0b0a12;
 }
 
 .timeline-item {
@@ -314,27 +328,33 @@ section h2 {
   top: 5px;
   width: 16px;
   height: 16px;
-  background: #0066cc;
+  background: #0b0a12;
   border-radius: 50%;
 }
 
 .timeline-content {
   background: #f8f9fa;
-  padding: 25px;
+  padding: 2rem;
   border-radius: 10px;
   color: #555;
   line-height: 1.6;
 }
 
 .timeline-content h3 {
-  color: #0066cc;
-  margin-bottom: 10px;
+  color: #0b0a12;
+  margin-bottom: 1rem;
 }
 
+.timeline-item .ufes {margin-bottom: .5rem;}
+
+.timeline-item hr {margin: 2rem 0 ;}
+
 .portfolio-container {
-  max-width: 75rem;
+  min-width: 75rem;
+  height: auto;
   margin: 0 auto;
   overflow-y: auto;
+  
 }
 
 .portfolio-container h2 {
@@ -368,7 +388,7 @@ section h2 {
 }
 
 .project-content h3 {
-  color: #0066cc;
+  color: #0b0a12;
   margin-bottom: 10px;
 }
 
@@ -380,7 +400,7 @@ section h2 {
 
 .project-tags span {
     background: #e3f2fd;
-    color: #0066cc;
+    color: #0b0a12;
     padding: 5px 10px;
     border-radius: 15px;
     font-size: 0.9em;
@@ -402,14 +422,15 @@ section h2 {
   }
   
   .project-links a:first-child {
-    background: #0066cc;
+    background: #0b0a12;
     color: #fff;
   }
   
   .project-links a:last-child {
-    border: 1px solid #0066cc;
-    color: #0066cc;
+    border: 1px solid #0b0a12;
+    color: #0b0a12;
     background: transparent;
+    margin: 1rem 0;
   }
   
   .project-links a:hover {
